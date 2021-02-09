@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(188, 207, 188);
+}
+
+.logoSlogan{
+    text-align: center;
+}
+.slogan{
+    padding-left: 20%;
+    color: white;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.topnav1 {
+    overflow: hidden;
+    background-color: rgb(188, 207, 188);
+    padding-left: 20%;
+    font-family: Courier;
+   
+}
+
+
+.topnav1 a {
+    float: left;
+    color: #080808;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /*border: solid;
+    border-radius: 30%;*/
+}
+
+
+.topnav1 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav1 a.active {
+    background-color: rgb(128, 184, 128);
+    color: white;
+}
+
+
+.descrip {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.imagen {
+    height: auto;
+    width: auto;
+    max-width: 740px;
+    max-height: 300px;
+}
+
+
+ .enlaces{
+    color: rgb(83, 138, 83);
+ }
+.videos {
+    text-align: center;
+}
+
+.tabla1{
+    border:solid rgb(128, 184, 128);
+    text-align: center;
+    border-radius: 20px;
+   
+}
+.lineas{
+    text-align: center;
+}
+
+
+footer {
+    padding-left: 40%;
+    bottom: 0;
+    position: relative;
+}
+
+
+#DL5{
+    display: none;
+}
+
+#DL2{
+    display: none;
+}
+#DLc3{
+    display: none;
+}

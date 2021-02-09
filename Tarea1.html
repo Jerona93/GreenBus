@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <!--En la siguiente línea se añade el icono de la pestanya-->
+    <link rel="shortcut icon" href="multi/favicon.ico" />
+
+    <title>GreenBus</title>
+    <div class="logoSlogan">
+        <h1><img src="multi/logoBus2.png" width="8%" height="8%">Green-Bus</h1>
+    
+        <p class="slogan">Hasta donde tú quieras</p>
+    </div>
+     
+  
+
+</head>
+
+<body>
+    <div class="topnav1">
+
+        <a class="active" href="Tarea1.html">Principal</a>
+        <a href="#lineas">Líneas</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="descrip">
+        <br>
+        
+        <table class="tabla1">
+            <tr>
+                <th colspan="2">Descripción</th>
+                
+            </tr>
+            <tr>
+                <td colspan="2">Nuestros autobuses están diseñados 100% pensando en el medio ambiente, son totalmente eléctricos, 0 emisión de co2. Durante nuestros recorridos intentamos que el mayor protagonista sea el medio ambiente.</td>
+            </tr>
+            
+            <tr align="left">
+                <td>
+                    <ul class="enlaces">
+                        <li><a href="https://www.tussam.es/es" target="blank">Tussam</a></li>
+                        <li><a href="https://www.alsa.es/" target="blank">Alsa</a></li>
+                        <li><a href="https://www.irizar.com/alcanzado-el-gran-reto-el-autobus-urbano-100-electric-del-grupo-irizar-es-ya-una-realidad/" target="blank">Irizar</a></li>
+                    </ul>
+
+                
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table >
+            <tr align="center">
+                <td><img src="multi/busElec1.jpg" width="80%" ></td>
+                <td><img src="multi/busElec2.jpg" width="80%" ></td>
+            </tr>
+        </table>
+        
+        <div class="lineas"> 
+            <h3>Lineas</h3>
+                <button id="L5" type="button" class="btn btn-outline-primary">Línea 5</button>
+                <button id="L2" type="button" class="btn btn-outline-primary">Línea 2</button>
+                <button id="Lc3" type="button" class="btn btn-outline-primary">Línea C3</button>
+            
+        </div>
+
+        
+        
+        <div id="DL5">
+            <p>Este es el recorrido que ofrecemos para la línea 5</p>
+            <img src="multi/L5.JPG" width="30%" >
+        </div>
+
+        <div id="DL2">
+            <p>Este es el recorrido que ofrecemos para la línea 2</p>
+            <img src="multi/L2.JPG" width="30%" >
+        </div>
+        
+        
+        <div id="DLc3">
+            <p>Este es el recorrido que ofrecemos para la línea C3</p>
+            <img src="multi/Lc3.JPG" width="30%" >
+        </div>
+
+
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <p>Direccion:Av. de la República Argentina, 21B
+            41011 Sevilla (España)</p> 
+
+            <p>Télefono: +34 +34 902 01 01 51</p>
+
+            <p>Fax: 902 01 01 52</p>
+        </div>
+        <script>
+            $( "#L5" ).click(function() {
+            $( "#DL5" ).fadeIn( 600 );
+            $( "#DL2" ).fadeOut( 50 );
+            $( "#DLc3" ).fadeOut( 50 );
+            });
+
+            $( "#L2" ).click(function() {
+            $( "#DL2" ).fadeIn( 600 );
+            $( "#DL5" ).fadeOut( 50 );
+            $( "#DLc3" ).fadeOut( 50 );
+            });
+
+            $( "#Lc3" ).click(function() {
+            $( "#DLc3" ).fadeIn( 600 );
+            $( "#DL5" ).fadeOut( 50 );
+            $( "#DL2" ).fadeOut( 50 );
+            });
+
+        </script>
+        
+    </div>
+    <footer>
+        Copyright &copy; Jesús Romero Navarro
+    </footer>
+</body>
+
+</html>
